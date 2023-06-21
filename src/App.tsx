@@ -1,5 +1,6 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom';
 import { Home, MyAccount, MyOrder, MyOrders, NotFound, SignIn } from '~/pages';
+import { Navbar } from '~/components';
 import './App.css';
 
 const AppRoutes = () => {
@@ -19,6 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       <AppRoutes />
+      <Navbar />
     </BrowserRouter>
   );
 }
